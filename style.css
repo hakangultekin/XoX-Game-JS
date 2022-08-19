@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #EEEEEE;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 80vh;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px #888888
+}
+
+.container h1{
+    font-size: 3rem;
+    font-weight: bold;  
+    color: #890F0D;
+}
+
+.container #player-info{
+    width: 100%;
+    text-align: end;
+    padding-right: 50px;
+    font-size: 24px;
+}
+
+#player-info #player{
+    font-weight: bold;
+    font-size: 2rem;
+    color: #3498db;
+}
+
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 24px;
+
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    font-weight: bold;
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+.box:hover{
+    background-color: #ffeaea;
+    transition: background-color .3s;
+}
+
+.br{
+    border-right: 6px solid #890F0D;
+}
+
+.bb{
+    border-bottom: 6px solid #890F0D;
+}
+
+#winner-announce{
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    top : 0;
+}
+
+#winner-announce > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 24px;
+    border-radius: 6px;
+    border: 1px solid white;
+    width: 30%;
+    height: 30%;
+    background-color: #fff;
+}
+
+#result {
+    color: #3498db;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.reset-button{
+    background: #3498db;
+    border-radius: 28px;
+    border : none;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+}
+
+.reset-button:hover{
+    background: #3cb0fd;
+}
